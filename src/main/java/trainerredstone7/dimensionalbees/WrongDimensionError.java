@@ -2,7 +2,6 @@ package trainerredstone7.dimensionalbees;
 
 import forestry.api.core.ForestryAPI;
 import forestry.api.core.IErrorState;
-import forestry.core.config.Constants;
 import forestry.core.render.TextureManagerForestry;
 import net.minecraft.client.renderer.texture.TextureAtlasSprite;
 import net.minecraft.util.ResourceLocation;

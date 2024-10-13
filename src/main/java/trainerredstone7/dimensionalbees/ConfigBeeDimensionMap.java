@@ -1,22 +1,16 @@
 package trainerredstone7.dimensionalbees;
 
 import java.util.HashMap;
-import java.util.HashSet;
 import java.util.Map;
 import java.util.NoSuchElementException;
 import java.util.Set;
 import java.util.StringTokenizer;
 import java.util.TreeSet;
 
-import forestry.api.apiculture.EnumBeeChromosome;
-import forestry.api.apiculture.IBee;
 import net.minecraftforge.common.config.Config;
-import net.minecraftforge.common.config.ConfigManager;
 import net.minecraftforge.common.config.Config.Comment;
 import net.minecraftforge.common.config.Config.Ignore;
 import net.minecraftforge.common.config.Config.LangKey;
-import net.minecraftforge.fml.client.event.ConfigChangedEvent;
-import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 
 @Config(modid = "dimensionalbees", category = "general")
 public class ConfigBeeDimensionMap {

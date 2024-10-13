@@ -22,7 +22,6 @@ import net.minecraft.util.text.TextComponentTranslation;
 import net.minecraft.util.text.TextFormatting;
 import net.minecraftforge.common.DimensionManager;
 import trainerredstone7.dimensionalbees.ConfigBeeDimensionMap;
-import trainerredstone7.dimensionalbees.DimensionalBees;
 import trainerredstone7.dimensionalbees.WrongDimensionError;
 
 @Mixin(Bee.class)

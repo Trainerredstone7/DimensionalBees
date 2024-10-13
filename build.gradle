@@ -46,19 +46,24 @@ repositories {
 		name "ModMaven"
 		url "https://modmaven.dev"
 	}
-	maven { url = "https://repo.spongepowered.org/maven" }
+//	maven { url = "https://repo.spongepowered.org/maven" }
+	maven {
+		name "CurseMaven"
+        url 'https://www.cursemaven.com'
+    }
 }
 
 
 dependencies {
-//    compile('org.spongepowered:mixin:0.7.10-SNAPSHOT') {
-	compile('org.spongepowered:mixin:0.8.3-SNAPSHOT') {
-		exclude module: 'launchwrapper'
-		exclude module: 'guava'
-		exclude module: 'commons-io'
-		exclude module: 'gson'
-    }
-//    annotationProcessor 'org.spongepowered:mixin:0.7.11-SNAPSHOT'
+//	compile('org.spongepowered:mixin:0.8.3-SNAPSHOT') {
+//		exclude module: 'launchwrapper'
+//		exclude module: 'guava'
+//		exclude module: 'commons-io'
+//		exclude module: 'gson'
+//    }
+
+	
+
     // you may put jars on which you depend on in ./libs
     // or you may define them like so..
     //compile "some.group:artifact:version:classifier"
@@ -76,6 +81,7 @@ dependencies {
     //deobfCompile 'com.mod-buildcraft:buildcraft:6.0.8:dev'
     //deobfProvided 'com.mod-buildcraft:buildcraft:6.0.8:dev'
 
+	compile 'curse.maven:fermiumbooter-968474:5346592'
 	compile 'net.sengir.forestry:forestry_1.12.2:5.8.2.387'
 
     // for more info...

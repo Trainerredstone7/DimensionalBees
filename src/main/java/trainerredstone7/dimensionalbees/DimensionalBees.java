@@ -1,7 +1,5 @@
 package trainerredstone7.dimensionalbees;
 
-import net.minecraft.init.Blocks;
-import net.minecraftforge.client.event.TextureStitchEvent;
 import net.minecraftforge.common.config.Config;
 import net.minecraftforge.common.config.ConfigManager;
 import net.minecraftforge.fml.client.event.ConfigChangedEvent;
@@ -12,15 +10,11 @@ import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
-import net.minecraftforge.fml.relauncher.Side;
-import net.minecraftforge.fml.relauncher.SideOnly;
 import trainerredstone7.dimensionalbees.proxy.CommonProxy;
 
 import org.apache.logging.log4j.Logger;
 
-import forestry.api.core.ForestryAPI;
-
-@Mod(modid = DimensionalBees.MODID, name = DimensionalBees.NAME, version = DimensionalBees.VERSION, dependencies = "required-after:forestry")
+@Mod(modid = DimensionalBees.MODID, name = DimensionalBees.NAME, version = DimensionalBees.VERSION, dependencies = "required-after:forestry;required-after:fermiumbooter")
 @Mod.EventBusSubscriber
 public class DimensionalBees
 {

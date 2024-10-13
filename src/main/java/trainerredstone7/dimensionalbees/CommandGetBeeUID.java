@@ -1,12 +1,9 @@
 package trainerredstone7.dimensionalbees;
 
 import java.util.ArrayList;
-import java.util.Collections;
 import java.util.List;
 
 import forestry.api.genetics.IIndividual;
-import forestry.apiculture.genetics.Bee;
-import forestry.core.genetics.ItemGE;
 import forestry.core.utils.GeneticsUtil;
 import net.minecraft.command.CommandBase;
 import net.minecraft.command.CommandException;
