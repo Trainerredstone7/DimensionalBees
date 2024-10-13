@@ -1,0 +1,7 @@
+dimensionalbees.messages.nogeneinfo=The item has no genetic info.
+
+dimensionalbees.tooltips.validdimensions=Can only work in these dimensions: 
+
+
+dimensionalbees.error.wrong_dimension.desc=Wrong Dimension
+dimensionalbees.error.wrong_dimension.help=The bees aren't comfortable in this world. Use the portable analyzer to determine the dimensions they call home.
