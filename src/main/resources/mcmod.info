@@ -1,0 +1,16 @@
+[
+{
+  "modid": "dimensionalbees",
+  "name": "Dimensional Bees",
+  "description": "Allows editing bees to only work in specific dimensions.",
+  "version": "${version}",
+  "mcversion": "${mcversion}",
+  "url": "",
+  "updateUrl": "",
+  "authorList": ["TrainerRedstone7"],
+  "credits": "",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]

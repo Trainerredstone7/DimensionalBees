@@ -1,0 +1,12 @@
+{
+	"required": true,
+	"package": "trainerredstone7.dimensionalbees.mixin",
+	"compatibilityLevel": "JAVA_8",
+	"refmap": "dimensionalbees.refmap.json",
+	"mixins": [
+		"MixinBee"
+	],
+	"client": [
+	],
+	"minVersion": "0.7"
+}
