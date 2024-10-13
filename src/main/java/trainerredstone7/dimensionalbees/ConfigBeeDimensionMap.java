@@ -12,6 +12,7 @@ import forestry.api.apiculture.EnumBeeChromosome;
 import forestry.api.apiculture.IBee;
 import net.minecraftforge.common.config.Config;
 import net.minecraftforge.common.config.ConfigManager;
+import net.minecraftforge.common.config.Config.Comment;
 import net.minecraftforge.common.config.Config.Ignore;
 import net.minecraftforge.common.config.Config.LangKey;
 import net.minecraftforge.fml.client.event.ConfigChangedEvent;
@@ -22,14 +23,15 @@ public class ConfigBeeDimensionMap {
 	
 	//the name to use should typically just be the name (in english) of the species
 	@LangKey(value = "dimensionalbees.config.beeDimensions")
+	@Comment(value = {"A list of bees and the dimensions they can work in.",
+			"Each entry should start with the bee species UID (obtainable with /buid while holding a bee)",
+			"and be followed by a comma- or space-separated list of dimension IDs.",
+			"Bees not in this list are unaffected.",
+			"Ex. \"forestry.speciesForest, -1, 1\" would make the Forest species only work in the nether and end."})
 	public static String[] beeDimensions = {};
 	
 	@Ignore
 	public static Map<String, Set<Integer>> beeDimensionMap;
-	
-	public boolean canBeeWorkInDimension(IBee bee, int dim) {
-		return beeDimensionMap.get(bee.getIdent()).contains(dim);
-	}
 	
 	public static void generateBeeDimensionMap() {
 		beeDimensionMap = new HashMap<String, Set<Integer>>();
