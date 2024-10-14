@@ -14,13 +14,14 @@ import trainerredstone7.dimensionalbees.proxy.CommonProxy;
 
 import org.apache.logging.log4j.Logger;
 
+//when running in dev, remove ;required-after:fermiumbooter from the dependencies string (for some reason Forge doesn't see fermiumbooter in the mods list and panics)
 @Mod(modid = DimensionalBees.MODID, name = DimensionalBees.NAME, version = DimensionalBees.VERSION, dependencies = "required-after:forestry;required-after:fermiumbooter")
 @Mod.EventBusSubscriber
 public class DimensionalBees
 {
     public static final String MODID = "dimensionalbees";
     public static final String NAME = "Dimensional Bees";
-    public static final String VERSION = "0.1";
+    public static final String VERSION = "1.0";
 
     public static Logger logger;
     @SidedProxy(clientSide = "trainerredstone7.dimensionalbees.proxy.ClientProxy", serverSide = "trainerredstone7.dimensionalbees.proxy.ServerProxy")
@@ -56,11 +57,4 @@ public class DimensionalBees
     		ConfigBeeDimensionMap.generateBeeDimensionMap();
     	}
     }
-    
-//	@SubscribeEvent
-//	@SideOnly(Side.CLIENT)
-//	public static void handleTextureRemap(TextureStitchEvent.Pre event) {
-//		WrongDimensionError.instance().registerSprite();
-//		DimensionalBees.logger.info("registered sprite");
-//	}
 }

@@ -6,6 +6,7 @@
 	"mixins": [
 		"MixinBee"
 	],
+	"required": true,
 	"client": [
 	],
 	"minVersion": "0.8"

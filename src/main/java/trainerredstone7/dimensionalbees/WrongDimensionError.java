@@ -34,25 +34,21 @@ public class WrongDimensionError implements IErrorState {
 	
 	@Override
 	public short getID() {
-		// TODO Auto-generated method stub
 		return id;
 	}
 
 	@Override
 	public String getUniqueName() {
-		// TODO Auto-generated method stub
 		return DimensionalBees.MODID + ":wrong_dimension";
 	}
 
 	@Override
 	public String getUnlocalizedDescription() {
-		// TODO Auto-generated method stub
 		return "dimensionalbees.error.wrong_dimension.desc";
 	}
 
 	@Override
 	public String getUnlocalizedHelp() {
-		// TODO Auto-generated method stub
 		return "dimensionalbees.error.wrong_dimension.help";
 	}
 
