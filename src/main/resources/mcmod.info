@@ -9,7 +9,7 @@
   "updateUrl": "",
   "authorList": ["TrainerRedstone7"],
   "credits": "",
-  "logoFile": "",
+  "logoFile": "assets/dimensionalbees/textures/logo.png",
   "screenshots": [],
   "dependencies": []
 }
